@@ -39,8 +39,9 @@ include(FindPackageHandleStandardArgs)
 find_package_handle_standard_args(
   Gperftools
   DEFAULT_MSG
-  GPERFTOOLS_LIBRARIES
-  GPERFTOOLS_INCLUDE_DIR)
+  REQUIRED_VARS
+  "GPERFTOOLS_LIBRARIES"
+  "GPERFTOOLS_INCLUDE_DIR")
 
 mark_as_advanced(
   Gperftools_ROOT_DIR
